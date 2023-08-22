@@ -23,6 +23,7 @@ console.log(nome)
 // Data Types
 let surname = 'Somaratne'; //This is a string.
 let city = "Milan"; //This is a string too.
+//Go at line 69.
 console.log(surname+" is a "+typeof(surname)+" and "+city+" is a "+typeof(city));
 //String can be defined with '' or "" quotes.
 let bool1 = true; 
@@ -47,6 +48,7 @@ console.log(und+" is a "+typeof(und));
 let bigInt = BigInt(Number.MAX_SAFE_INTEGER); 
 console.log(bigInt+" is a "+typeof(bigInt));
 //BigInt are big numbers
+/////////////////////////////////////////////////////////////////////////////////////////////
 //Operators
 let x = 10;
 console.log("Before...");
@@ -58,3 +60,18 @@ console.log(x);
 let y = 11; // = is use to assign a value.
 console.log(0 == '0'); // It checks whether they are equal for their value
 console.log(0 === '0'); // It whether they are equal for their value AND for their datatype
+//////////////////////////////////////////////////////////////////////////////////////////////
+//String and Template Literals
+const firstName = 'Sithi';
+console.log(firstName);
+const fName = "Sithila";
+console.log(fName);
+const firstN = `SithiSS`; //This is also a string!
+console.log(firstN);
+const First_Name = "Sithila";
+const Nick_Name = "Sihan";
+const Last_Name = "Somaratne";
+//Concatenation:
+// Instead of doing : let me = "I'm "+First_Name+" "+Nick_name+" "+Last_Name+" and my age is "+age+" years old", we can do the below, instead.
+let me = `I'm ${First_Name} ${Nick_Name} ${Last_Name} and my age is ${age} years old.`;
+console.log(me);
