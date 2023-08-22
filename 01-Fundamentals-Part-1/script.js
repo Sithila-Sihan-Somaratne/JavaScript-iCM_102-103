@@ -54,3 +54,7 @@ console.log(x);
 x++; //Increments by 1 : 10+1;
 console.log("After...");
 console.log(x);
+// = vs == 
+let y = 11; // = is use to assign a value.
+console.log(0 == '0'); // It checks whether they are equal for their value
+console.log(0 === '0'); // It whether they are equal for their value AND for their datatype
