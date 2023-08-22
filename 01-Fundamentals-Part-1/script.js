@@ -71,7 +71,19 @@ console.log(firstN);
 const First_Name = "Sithila";
 const Nick_Name = "Sihan";
 const Last_Name = "Somaratne";
+const age = 13;
 //Concatenation:
 // Instead of doing : let me = "I'm "+First_Name+" "+Nick_name+" "+Last_Name+" and my age is "+age+" years old", we can do the below, instead.
 let me = `I'm ${First_Name} ${Nick_Name} ${Last_Name} and my age is ${age} years old.`;
 console.log(me);
+/////////////////////////////////////////////////////////////////////////////////////////
+//Flow Control(if/else statement)
+let Age = 20;
+// You can write like this: if (Age > 18) console.log(`You can get the deiving lisance`); //only for if statement
+if (Age > 0 & Age > 18) {
+    console.log("You can get the driving lisance");
+} else if(Age > 0 & Age < 18) {
+    console.log("You can get the driving lisance");
+}else{
+    console.log("Invalid age");
+}
