@@ -40,3 +40,33 @@ const isPrime = (number) =>{
     }
 }
 isPrime(2);
+////////////////////////////////////////////////////////////////////////////////////
+//Arrays
+const friend1 = `Armenia`;
+const friend2 = `Azerbaijian`;
+const friend3 = `Georgia`;
+let friends = [friend1, friend2, friend3];
+console.log(friends);
+console.log(friends.length);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+let friend = new Array(`Danapala`, `Gunapala`, `Somapala`, `Siripala`, `Amara`, ``);
+console.log(friend);
+friend[4] = `Amarapala`;
+console.log(friend);
+let setName = document.getElementById('setName');
+let newName = document.getElementById('name').value;
+friend[5] = newName;
+console.log(friend);
+//Add Element
+friend.push("Weerapala");
+//Remove Element
+friend.unshift("Dunapala");
+console.log(friend);
+friend.pop();
+console.log(friend);
+friend.shift();
+console.log(friend);
+console.log("Contains Dunapala : "+friend.includes('Dunapala'));
+console.log("Contains Danapala : "+friend.includes('Danapala'));
