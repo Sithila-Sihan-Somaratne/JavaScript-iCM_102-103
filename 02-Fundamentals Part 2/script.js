@@ -11,12 +11,21 @@ function logger() {
     console.log('Logger!');
 }
 logger();
-
 function numberLogger(num1, num2){
     console.log(num1+num2*num2+num1);
 }
 numberLogger(5,6);
-function sum_minus_multi_divide(num1,num2,num3,num4,num5){
-    return "Number is "+(num1+num2-num3*num4/num5);
+function sum_minus_multi_divide(number1,number2,number3,number4,number5){
+    return (number1+number2-number3*number4/number5);
 }
-sum_minus_multi_divide(6,0,4,2,8);
+let x = sum_minus_multi_divide(6,0,4,2,8);
+console.log(`Number is ${x}`);
+const fullName = function(fName, sName){
+    console.log(`${fName} ${sName}`);
+}
+fullName("Sithila Sihan", "Somaratne")
+const theName = (fName, sName) => {
+    return `${fName} ${sName}`;
+}
+let Name = theName("Sithila Sihan", "Somaratne");
+console.log("My full name is "+Name);
