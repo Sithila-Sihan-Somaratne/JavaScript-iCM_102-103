@@ -121,4 +121,20 @@ const nimal = {
     occupation : 'student' 
 };
 console.log(nimal)
-console.log(nimal.firstName+" "+nimal.lastName+" is "+nimal.age+ "and he is a "+nimal.occupation);
+console.log(nimal.firstName+" "+nimal.lastName+" is "+nimal.age+ " and he is a "+nimal.occupation);
+///////////////////////////////////////////////////////////////////////////////
+// Dot and Bracket Notation
+const bimal = {
+    firstName : 'Bimal',
+    lastName : 'Shan',
+    age : 22,
+    occupation : 'student' 
+};
+console.log(bimal.firstName); //Dot Notation. //Bimal
+
+console.log(bimal['lastName']); //Bracket notation. //Shan
+let keys = ['firstName','lastName','age','occupation'];
+keys.forEach(element => {
+    console.log(`${element} : ${bimal[element]}`);
+});
+console.log(keys);
