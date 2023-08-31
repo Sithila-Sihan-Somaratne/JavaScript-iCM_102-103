@@ -164,3 +164,55 @@ console.log(vimal.canGetDrivingLisance());
 
 vimal.age = 12;
 console.log(vimal.canGetDrivingLisance());
+console.log(vimal);
+
+///////////////////////////////////////////////////////////////////////////////////
+//ES6 Classes
+
+class person{
+    constructor(firstName,lastName,age,occupation){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.occupation = occupation;
+    }
+}
+person.prototype.fullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+}
+
+let kasun = new person('Kasun','Saliya',26,'Driver');
+console.log(`Hi, I'm ${kasun.fullName()}`);
+
+class People{
+    constructor(firstName,lastName,age,occupation,getFriends){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.occupation = occupation;
+        this.getFriends = function(){
+            for (let index = 0; index < Friend.length; index++) {
+                if(Friend.length == 0){
+                   return `${anura.firstName}'s friend is ${friend[index]}.`;
+                }else{
+                    if(index == Friend.length-2){
+                        return `${anura.firstName}'s friend are ${Friend[index].firstName} and ${Friend[index+1].firstName}.`
+                    }else if(index == Friend.length-1){
+                        return `${anura.firstName}'s friend are ${Friend[index].firstName}, ${Friend[index+1].firstName} and ${Friend[index+2].firstName}.`
+                    }else{
+                        return `${anura.firstName}'s friend are ${Friend[index].firstName}, ${Friend[index+1].firstName}, ${Friend[index+2].firstName} and ${Friend[index+3].firstName}.`
+            
+                    }
+                }
+            }
+        };
+    }
+}
+let Friend = new Array();
+
+let anura = new People('Anura','Anjana',27,'Doctor');
+Friend.push(new People('Praveen','Senaratne',24,'Cricketer'));
+Friend.push(new People('Lakmal','Jayasuriya',26,'Bus Driver'));
+Friend.push(new People('Sunil','Gaulagala',29,'Mechanic'));
+Friend.push(new People('Kumara','Mendis',25,'Software Enginner'));
+console.log(anura.getFriends());
