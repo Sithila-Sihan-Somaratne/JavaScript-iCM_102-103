@@ -85,3 +85,40 @@ do {
     console.log("Do-While Loop: "+friend[k]);
     k++;
 } while (k!=friend.length);
+///////////////////////////////////////////////////////////////////////////////////
+//Sorting Arrays
+let ar = [52,74,36,58,96,32,56,41];
+console.log(ar);
+
+function sortAr(array){
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i+1; j < array.length; j++) {
+           if (array[i]>array[j]) {
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+           } 
+        } 
+    }
+    return array;
+}
+console.log(sortAr(ar));
+////////////////////////////////////////////////////////////////////////////////
+// Introdution to objects
+
+const vimal = [
+    'Vimal',
+    'Sanjeewa',
+    '23',
+    'student'
+];
+console.log(vimal)
+console.log(vimal[0]+" "+vimal[1]+" is "+vimal[2]+" and he is a "+vimal[3]);
+const nimal = {
+    firstName : 'Nimal',
+    lastName : 'Sangeetha',
+    age : 23,
+    occupation : 'student' 
+};
+console.log(nimal)
+console.log(nimal.firstName+" "+nimal.lastName+" is "+nimal.age+ "and he is a "+nimal.occupation);
