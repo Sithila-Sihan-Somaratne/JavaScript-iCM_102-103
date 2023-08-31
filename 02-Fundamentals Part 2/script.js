@@ -70,3 +70,18 @@ friend.shift();
 console.log(friend);
 console.log("Contains Dunapala : "+friend.includes('Dunapala'));
 console.log("Contains Danapala : "+friend.includes('Danapala'));
+///////////////////////////////////////////////////////////////////////////////////
+// Looping Array
+for (let i = 0; i < friend.length; i++) {
+    console.log("For Loop : "+friend[i]);
+}
+let j = 0;
+while(j!=friend.length){
+    console.log("While Loop: "+friend[j]);
+    j++;
+}
+let k = -1;
+do {
+    console.log("Do-While Loop: "+friend[k]);
+    k++;
+} while (k!=friend.length);
