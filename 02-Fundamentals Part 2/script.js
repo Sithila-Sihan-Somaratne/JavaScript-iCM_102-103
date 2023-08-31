@@ -106,14 +106,14 @@ console.log(sortAr(ar));
 ////////////////////////////////////////////////////////////////////////////////
 // Introdution to objects
 
-const vimal = [
+const kamal = [
     'Vimal',
     'Sanjeewa',
     '23',
     'student'
 ];
-console.log(vimal)
-console.log(vimal[0]+" "+vimal[1]+" is "+vimal[2]+" and he is a "+vimal[3]);
+console.log(kamal)
+console.log(kamal[0]+" "+kamal[1]+" is "+kamal[2]+" and he is a "+kamal[3]);
 const nimal = {
     firstName : 'Nimal',
     lastName : 'Sangeetha',
@@ -138,3 +138,29 @@ keys.forEach(element => {
     console.log(`${element} : ${bimal[element]}`);
 });
 console.log(keys);
+//////////////////////////////////////////////////////////////////////////////
+//Obhects Methods
+
+const vimal = {
+    firstName : 'Vimal',
+    lastName : 'Sanjeewa',
+    age : 23,
+    occupation : 'student',
+    fullName : function(){
+        return this.firstName+" "+this.lastName;
+    },
+    canGetDrivingLisance : function(){
+        if(this.age > 18){
+            return `Yes, ${this.fullName()} is ${this.age} years old. So he can get the driving lisance.`;
+        }else{
+            return `No, ${this.fullName()} is ${this.age} years old. So he cannot get the driving lisance.`;
+        }
+    }
+}
+
+
+console.log(vimal.fullName());
+console.log(vimal.canGetDrivingLisance());
+
+vimal.age = 12;
+console.log(vimal.canGetDrivingLisance());
