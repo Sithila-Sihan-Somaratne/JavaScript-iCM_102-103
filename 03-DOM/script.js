@@ -41,3 +41,10 @@ title.style.fontWeight = "600";
 title.style.backgroundColor = "black";
 title.style.color = "blue";
 title.style["color"] = "red";
+let comp = document.createElement('p');
+comp.innerText = "Hi!";
+console.log(comp);
+console.log(document.querySelector('#strong').appendChild(comp));
+let div = document.querySelector('.container');
+console.log(div);
+div.insertBefore(comp,div.children[3])
