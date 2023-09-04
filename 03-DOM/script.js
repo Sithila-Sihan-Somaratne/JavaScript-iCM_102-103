@@ -14,7 +14,6 @@ let checkIsAEmail = () =>{
 console.log(document);
 console.log(document.getElementById('result'));
 const doc = document.body;
-doc.append('Hello!');
 const span = document.getElementById('span');
 console.log(span);
 span.innerText = "This is a span!";
@@ -47,4 +46,4 @@ console.log(comp);
 console.log(document.querySelector('#strong').appendChild(comp));
 let div = document.querySelector('.container');
 console.log(div);
-div.insertBefore(comp,div.children[3])
+div.insertBefore(comp,div.children[3]);
