@@ -22,3 +22,9 @@ $('h1').text('Sri Lanka');
 
 //Get Text Content
 console.log($('h1').text());
+
+//Get HTML element
+console.log($('body').html());
+
+//Set HTML element
+$('strong').html('<bold>I am bold!</bold>');
