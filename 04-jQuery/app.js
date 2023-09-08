@@ -39,3 +39,13 @@ console.log($('button#sv-btn').attr('class'));
 $('button#sv-btn').attr('id',"btn");
 $('button').attr('id',"btn");
 console.log($('button').attr('id'))
+////////////////////////////////////////////////////////
+//Add or remove class
+////////////////////////////////////////////////////////
+
+//Add a class
+$('strong').addClass('strong');
+console.log($('strong').attr('class'));
+//Remove a class
+$('strong').removeClass('strong');
+console.log($('strong').attr('class'));
