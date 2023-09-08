@@ -40,7 +40,7 @@ $('button#sv-btn').attr('id',"btn");
 $('button').attr('id',"btn");
 console.log($('button').attr('id'))
 ////////////////////////////////////////////////////////
-//Add or remove class
+//Add or remove classes
 ////////////////////////////////////////////////////////
 
 //Add a class
