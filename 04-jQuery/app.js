@@ -28,3 +28,14 @@ console.log($('body').html());
 
 //Set HTML element
 $('strong').html('<bold>I am bold!</bold>');
+////////////////////////////////////////////////////////
+//Modify Attributes
+////////////////////////////////////////////////////////
+
+//Get an attribute
+console.log($('button#sv-btn').attr('id'));
+console.log($('button#sv-btn').attr('class'));
+//Set an attribute
+$('button#sv-btn').attr('id',"btn");
+$('button').attr('id',"btn");
+console.log($('button').attr('id'))
