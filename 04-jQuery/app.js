@@ -49,3 +49,6 @@ console.log($('strong').attr('class'));
 //Remove a class
 $('strong').removeClass('strong');
 console.log($('strong').attr('class'));
+////////////////////////////////////////////////////////
+//Changong CSS property
+////////////////////////////////////////////////////////
