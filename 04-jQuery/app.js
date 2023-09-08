@@ -53,3 +53,12 @@ console.log($('strong').attr('class'));
 //Changing CSS property
 ////////////////////////////////////////////////////////
 $('h1').css('color','orange');
+////////////////////////////////////////////////////////
+//Handling Events
+////////////////////////////////////////////////////////
+$('h1').click(function() {
+    console.log('The h1 tag clicked.');
+});
+$('h1').mouseover(function() {
+    console.log('Mouse over event triggered on h1 tag.');
+});
