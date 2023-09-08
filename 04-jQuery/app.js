@@ -50,6 +50,6 @@ console.log($('strong').attr('class'));
 $('strong').removeClass('strong');
 console.log($('strong').attr('class'));
 ////////////////////////////////////////////////////////
-//Changong CSS property
+//Changing CSS property
 ////////////////////////////////////////////////////////
 $('h1').css('color','orange');
